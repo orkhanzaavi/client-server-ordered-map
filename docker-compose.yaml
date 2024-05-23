@@ -1,0 +1,13 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3.9.9-management-alpine
+    ports:
+      - '5672:$AMQP_PORT'
+      - 15672:15672
+    networks:
+      - sandbox
+    restart: unless-stopped
+
+networks:
+  sandbox:
+    driver: bridge

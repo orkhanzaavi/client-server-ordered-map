@@ -1,0 +1,6 @@
+addItem:key1,val1
+addItem:key2,val2
+getAllItems
+deleteItem:key1
+getItem:key2
+getAllItems
